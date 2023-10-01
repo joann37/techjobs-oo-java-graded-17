@@ -63,14 +63,14 @@ public class Job {
         if(this.coreCompetency.getValue().equals("")){
             this.coreCompetency.setValue(("Data not available"));
         }
-        return "\n" +
+        return lineSeparator() +
                 "ID: " + id +
-                "\nName: " +name+
-                "\nEmployer: " +employer+
-                "\nLocation: " +location+
-                "\nPosition Type: " +positionType+
-                "\nCore Competency: " +coreCompetency+
-                "\n";
+                lineSeparator()+"Name: " +name+
+                lineSeparator()+"Employer: " +employer+
+                lineSeparator()+"Location: " +location+
+                lineSeparator()+"Position Type: " +positionType+
+                lineSeparator()+"Core Competency: " +coreCompetency+
+                lineSeparator();
     }
 //     TODO: Add getters for each field EXCEPT nextId. Add setters for each field EXCEPT nextID
 //      and id.
