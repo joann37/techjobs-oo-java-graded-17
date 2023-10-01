@@ -48,6 +48,8 @@ public class Job {
 
     @Override
     public String toString(){
+        String newline= System.lineSeparator();
+
         if(name == "") {
             setName("Data not available");
         }
@@ -63,14 +65,14 @@ public class Job {
         if(this.coreCompetency.getValue().equals("")){
             this.coreCompetency.setValue(("Data not available"));
         }
-        return lineSeparator() +
+        return newline +
                 "ID: " + id +
-                lineSeparator()+"Name: " +name+
-                lineSeparator()+"Employer: " +employer+
-                lineSeparator()+"Location: " +location+
-                lineSeparator()+"Position Type: " +positionType+
-                lineSeparator()+"Core Competency: " +coreCompetency+
-                lineSeparator();
+                newline+"Name: " +name+
+                newline+"Employer: " +employer+
+                newline+"Location: " +location+
+                newline+"Position Type: " +positionType+
+                newline+"Core Competency: " +coreCompetency+
+                newline;
     }
 //     TODO: Add getters for each field EXCEPT nextId. Add setters for each field EXCEPT nextID
 //      and id.
