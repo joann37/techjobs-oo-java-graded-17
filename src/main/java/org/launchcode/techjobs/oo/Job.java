@@ -4,7 +4,7 @@ import java.util.Objects;
 
 public class Job {
 
-    private int id;
+    private final int id;
     private static int nextId = 1;
 
     private String name;
@@ -48,7 +48,6 @@ public class Job {
 
     @Override
     public String toString(){
-        String newline= System.lineSeparator();
 
         if(name == "") {
             setName("Data not available");

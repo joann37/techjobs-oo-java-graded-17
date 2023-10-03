@@ -40,10 +40,10 @@ public class TestTaskFive extends AbstractTest {
 
         String jobString = job.toString();
 
-        assertTrue(jobString.startsWith (lineSeparator()));
-        assertTrue(jobString.endsWith(lineSeparator()));
-
-        //        String firstChar = String.valueOf(job.toString().charAt(0));
+          assertTrue(jobString.startsWith (lineSeparator()));
+          assertTrue(jobString.endsWith(lineSeparator()));
+//
+//                String firstChar = String.valueOf(job.toString().charAt(0));
 //        String lastChar = String.valueOf(job.toString().charAt(job.toString().length()-1));
 //        assertEquals(firstChar, lineSeparator());
 //        assertEquals(lastChar, lineSeparator());
